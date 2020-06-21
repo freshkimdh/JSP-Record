@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+			<style>
+				#title {
+					font-size:3em;
+				}
+			</style>
+	</head>
+<body>
+	<div id="title">
+		회원가입
+	</div>
+
+	<form action="Log" method="post"> <!--Log로 맵핑, post 메소드 호출  -->
+	
+	이름: <input type="text" name="name" size="10"><br/>
+	아이디: <input type="text" name="id" size="10"><br/>
+	비밀번호: <input type="password" name="pw" size="10"><br/>
+	
+	<!--다수 선택 checkbox 사용  -->
+	취미: <input type="checkbox" name="hobby" value="read">독서
+		<input type="checkbox" name="hobby" value="cook">요리
+		<input type="checkbox" name="hobby" value="run">조깅
+		<input type="checkbox" name="hobby" value="swim">수영
+		<input type="checkbox" name="hobby" value="sleep">취침<br/>
+		
+	<!-- 단일  선택 redio 사용  -->	
+	전공과목: <input type="radio" name="major" value="kor" checked="checked">국어
+			<input type="radio" name="major" value="eng">영어
+			<input type="radio" name="major" value="math">수학
+			<input type="radio" name="major" value="design">디자인<br/>
+	
+	<!-- 다수 중에 1개 선택  -->	
+	<select name="protocol">
+		<option value="http">http</option>
+		<option value="ftp" selected="selected">ftp</option>
+		<option value="smpt">smpt</option>
+		<option value="pop">pop</option>
+	</select><br/>
+			
+	
+	<input type="submit" value="전송">
+	<input type="reset" value="초기화"> <!--초기화 버튼 생성 -->
+	
+	
+	</form>
+
+</body>
+</html>
